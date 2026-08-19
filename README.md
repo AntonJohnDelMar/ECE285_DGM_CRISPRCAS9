@@ -153,20 +153,9 @@ In our encoder we have token embeddings as well as positional encodings. Token e
 
 We use sinusoidal positional encoding to give each token embedding a special code that allows the transformer to understand which position it is in. Once we tokenize our input, we create embeddings for the tokens, which are simply learnable parameters with a fixed dimension $d_k$. Then, we use sinusoidal positional encoding as mentioned above to tell the transformer, where the token is in the sequence [9]:
 
-$$
-PE_{pos,2i}
-=
-\sin
-\left(
-\frac{pos}{10000^{\frac{2i}{d_k}}}
-\right),
-\quad
-PE_{pos,2i+1}
-=
-\cos
-\left(
-\frac{pos}{10000^{\frac{2i}{d_k}}}
-\right)
+$$ 
+PE_{pos,2i} = \sin\left(\frac{pos}{10000^{2i/d_k}}\right), \qquad
+PE_{pos,2i+1} = \cos\left(\frac{pos}{10000^{2i/d_k}}\right)
 $$
 
 Tokens are the key to encoding our input DNA and output gRNA sequences. We experimented with two different approaches each with their benefits and drawbacks.
@@ -194,12 +183,7 @@ We pass in our sequence of embedded k-mer tokens $X \in \mathbb{R}^{T \times d_{
 Attention scores are then computed using the scaled dot-product [9]:
 
 $$
-\text{Attention}(Q, K, V)
-=
-\text{softmax}
-\left(
-\frac{QK^\top}{\sqrt{d_k}}
-\right)V
+\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 $$
 
 Since we are using multi headed self attention we compute this query, key, value operation over our 8 heads to learn the semantics and relations, which are then concatenated and linearly projected [9].
@@ -207,9 +191,7 @@ Since we are using multi headed self attention we compute this query, key, value
 The output of the attention mechanism is passed through a feed-forward network of the form:
 
 $$
-\text{FFN}(x)
-=
-\text{ReLU}(xW_1 + b_1)W_2 + b_2
+\text{FFN}(x) = \text{ReLU}(xW_1 + b_1)W_2 + b_2
 $$
 
 with layer normalization and residual connections applied after both the attention and feed-forward sublayers.
@@ -221,9 +203,7 @@ Our decoder first applies masked multi-head self-attention over the gRNA sequenc
 After processing through all decoder layers, the final output is projected through a linear layer to produce logits over the vocabulary [9]:
 
 $$
-\text{Logits}
-=
-Y'W^{\text{out}} + b
+\text{Logits} = Y'W^{\text{out}} + b
 $$
 
 where $Y' \in \mathbb{R}^{T' \times d_{\text{model}}}$ is the output of the final decoder block, and $W^{\text{out}} \in \mathbb{R}^{d_{\text{model}} \times |\mathcal{V}|}$ maps the output to the vocabulary space.
@@ -231,8 +211,7 @@ where $Y' \in \mathbb{R}^{T' \times d_{\text{model}}}$ is the output of the fina
 During training, we optimize the likelihood of generating the correct gRNA sequence given the DNA input, i.e.,
 
 $$
-\prod_{t=1}^{T}
-p(x_t \mid x_{<t}, y)
+\prod_{t=1}^{T} p(x_t \mid x_{<t}, y)
 $$
 
 During inference, the decoder generates gRNA tokens, conditioned on both the latent representation and the input DNA sequence, using the masked self-attention to model left-context and cross-attention to integrate the DNA semantics.
