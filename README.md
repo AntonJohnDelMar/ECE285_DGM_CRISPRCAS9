@@ -9,6 +9,14 @@ University of California, San Diego
 
 `tqvu@ucsd.edu` · `dychen@ucsd.edu` · `adelmar@ucsd.edu`
 
+This is inline math: $p_\theta(x \mid y)$
+
+$$
+p_\theta(w_1, \dots, w_n)
+=
+\prod_{i=1}^{n} p_\theta(w_i \mid w_{1:i-1})
+$$
+
 ## Abstract
 
 There are a lot of potential health improvements with the development of genome editing through CRISPR-Cas9. CRISPR-Cas9 is a gene-editing tool that uses a guide RNA to direct the Cas9 enzyme to a specific DNA sequence, where it makes a precise cut to modify the gene. In this project, we use transformers to generate gRNA sequences for CRISPR-Cas9 in hopes to develop a method of creating the most efficient gRNA of a given target DNA sequence.
