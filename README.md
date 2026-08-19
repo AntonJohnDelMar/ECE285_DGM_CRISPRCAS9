@@ -9,14 +9,6 @@ University of California, San Diego
 
 `tqvu@ucsd.edu` · `dychen@ucsd.edu` · `adelmar@ucsd.edu`
 
-This is inline math: $p_\theta(x \mid y)$
-
-$$
-p_\theta(w_1, \dots, w_n)
-=
-\prod_{i=1}^{n} p_\theta(w_i \mid w_{1:i-1})
-$$
-
 ## Abstract
 
 There are a lot of potential health improvements with the development of genome editing through CRISPR-Cas9. CRISPR-Cas9 is a gene-editing tool that uses a guide RNA to direct the Cas9 enzyme to a specific DNA sequence, where it makes a precise cut to modify the gene. In this project, we use transformers to generate gRNA sequences for CRISPR-Cas9 in hopes to develop a method of creating the most efficient gRNA of a given target DNA sequence.
@@ -77,25 +69,9 @@ We use a transformer to learn the mapping from a DNA sequence to its most effect
 
 The joint probability $p(w_1, \dots, w_n)$ is:
 
-$$
-p_\theta(w_1, \dots, w_n)
-=
-p_\theta(w_1)
-\cdot
-\prod_{i=2}^{n} p_(w_i \mid w_{1:i-1}),
-\quad
-\text{where } w_i \text{ are the tokens}
-$$
+$p_\theta(w_1, \dots, w_n) = p_\theta(w_1) \cdot \prod_{i=2}^{n} p_(w_i \mid w_{1:i-1}), \quad \text{where } w_i \text{ are the tokens}$
 
-$$
-p_\theta(w_j)
-=
-\text{softmax}(W_{\text{out}} \, h^{(i)}_{j-1} + b),
-\quad
-h^{(i)}_{j-1}
-=
-\sum_{k=1}^{j-2} \hat{a}_k \, h_k^{(i+1)}
-$$
+$p_\theta(w_j) = \text{softmax}(W_{\text{out}} \, h^{(i)}_{j-1} + b), \quad h^{(i)}_{j-1} = \sum_{k=1}^{j-2} \hat{a}_k \, h_k^{(i+1)}$
 
 where:
 
@@ -107,49 +83,17 @@ Our goal is to learn the conditional probability $p_\theta(x|y)$, where $x$ is t
 
 We optimize the model using maximum likelihood estimation (MLE), which gives the following objective function [16]:
 
-$$
-p_\theta(x \mid y)
-=
-p_\theta(w_1, w_2, \dots, w_n \mid y)
-$$
+$p_\theta(x \mid y) = p_\theta(w_1, w_2, \dots, w_n \mid y)$
 
-$$
-=
-\prod_{i=1}^{n}
-p_\theta(w_i \mid w_{1:i-1}, y)
-$$
+$= \prod_{i=1}^{n} p_\theta(w_i \mid w_{1:i-1}, y)$
 
-$$
-\mathcal{L}
-=
-- \log p_\theta(x \mid y)
-$$
+$\mathcal{L} = - \log p_\theta(x \mid y)$
 
-$$
-=
-- \log
-\left(
-\prod_{i=1}^{n}
-p_\theta(w_i \mid w_{1:i-1}, y)
-\right)
-$$
+$= - \log \left( \prod_{i=1}^{n} p_\theta(w_i \mid w_{1:i-1}, y) \right)$
 
-$$
-=
-- \sum_{i=1}^{n}
-\log p_\theta(w_i \mid w_{1:i-1}, y)
-$$
+$= - \sum_{i=1}^{n} \log p_\theta(w_i \mid w_{1:i-1}, y)$
 
-$$
-=
--
-\left(
-\log p_\theta(w_1 \mid y)
-+
-\sum_{i=2}^{n}
-\log p_\theta(w_i \mid w_{1:i-1}, y)
-\right)
-$$
+$= - \left( \log p_\theta(w_1 \mid y) + \sum_{i=2}^{n} \log p_\theta(w_i \mid w_{1:i-1}, y) \right)$
 
 ### Model Architecture
 
@@ -161,10 +105,7 @@ In our encoder we have token embeddings as well as positional encodings. Token e
 
 We use sinusoidal positional encoding to give each token embedding a special code that allows the transformer to understand which position it is in. Once we tokenize our input, we create embeddings for the tokens, which are simply learnable parameters with a fixed dimension $d_k$. Then, we use sinusoidal positional encoding as mentioned above to tell the transformer, where the token is in the sequence [9]:
 
-$$ 
-PE_{pos,2i} = \sin\left(\frac{pos}{10000^{2i/d_k}}\right), \qquad
-PE_{pos,2i+1} = \cos\left(\frac{pos}{10000^{2i/d_k}}\right)
-$$
+$PE_{pos,2i} = \sin\left(\frac{pos}{10000^{2i/d_k}}\right), \qquad PE_{pos,2i+1} = \cos\left(\frac{pos}{10000^{2i/d_k}}\right)$
 
 Tokens are the key to encoding our input DNA and output gRNA sequences. We experimented with two different approaches each with their benefits and drawbacks.
 
@@ -190,17 +131,13 @@ We pass in our sequence of embedded k-mer tokens $X \in \mathbb{R}^{T \times d_{
 
 Attention scores are then computed using the scaled dot-product [9]:
 
-$$
-\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-$$
+$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$
 
 Since we are using multi headed self attention we compute this query, key, value operation over our 8 heads to learn the semantics and relations, which are then concatenated and linearly projected [9].
 
 The output of the attention mechanism is passed through a feed-forward network of the form:
 
-$$
-\text{FFN}(x) = \text{ReLU}(xW_1 + b_1)W_2 + b_2
-$$
+$\text{FFN}(x) = \text{ReLU}(xW_1 + b_1)W_2 + b_2$
 
 with layer normalization and residual connections applied after both the attention and feed-forward sublayers.
 
@@ -210,17 +147,13 @@ Our decoder first applies masked multi-head self-attention over the gRNA sequenc
 
 After processing through all decoder layers, the final output is projected through a linear layer to produce logits over the vocabulary [9]:
 
-$$
-\text{Logits} = Y'W^{\text{out}} + b
-$$
+$\text{Logits} = Y'W^{\text{out}} + b$
 
 where $Y' \in \mathbb{R}^{T' \times d_{\text{model}}}$ is the output of the final decoder block, and $W^{\text{out}} \in \mathbb{R}^{d_{\text{model}} \times |\mathcal{V}|}$ maps the output to the vocabulary space.
 
 During training, we optimize the likelihood of generating the correct gRNA sequence given the DNA input, i.e.,
 
-$$
-\prod_{t=1}^{T} p(x_t \mid x_{<t}, y)
-$$
+$\prod_{t=1}^{T} p(x_t \mid x_{<t}, y)$
 
 During inference, the decoder generates gRNA tokens, conditioned on both the latent representation and the input DNA sequence, using the masked self-attention to model left-context and cross-attention to integrate the DNA semantics.
 
