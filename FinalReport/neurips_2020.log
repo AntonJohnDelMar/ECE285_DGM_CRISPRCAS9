@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  19 AUG 2026 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  19 AUG 2026 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/anton/OneDrive/Desktop/UCSD/Engineering/ECE 285 DGM/ECE285_DGM_CRISPRCAS9/MidtermReport/neurips_2020.tex"
-(c:/Users/anton/OneDrive/Desktop/UCSD/Engineering/ECE 285 DGM/ECE285_DGM_CRISPRCAS9/MidtermReport/neurips_2020.tex
+**"c:/Users/anton/OneDrive/Desktop/UCSD/Engineering/ECE 285 DGM/ECE285_DGM_CRISPRCAS9/FinalReport/neurips_2020.tex"
+(c:/Users/anton/OneDrive/Desktop/UCSD/Engineering/ECE 285 DGM/ECE285_DGM_CRISPRCAS9/FinalReport/neurips_2020.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -414,27 +414,33 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count328
+\multirow@dima=\skip63
+\bigstrutjot=\dimen190
 ) (neurips_2020.aux)
 \openout1 = `neurips_2020.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -502,25 +508,25 @@ LaTeX Font Info:    ... okay on input line 50.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 56.
 (neurips_2020.out) (neurips_2020.out)
 \@outlinefile=\write3
 \openout3 = `neurips_2020.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 50.
-Package microtype Info: Applying patch `item' on input line 50.
-Package microtype Info: Applying patch `toc' on input line 50.
-Package microtype Info: Applying patch `eqnum' on input line 50.
-Package microtype Info: Applying patch `footnote' on input line 50.
-Package microtype Info: Applying patch `verbatim' on input line 50.
-LaTeX Info: Redefining \microtypesetup on input line 50.
+LaTeX Info: Redefining \microtypecontext on input line 56.
+Package microtype Info: Applying patch `item' on input line 56.
+Package microtype Info: Applying patch `toc' on input line 56.
+Package microtype Info: Applying patch `eqnum' on input line 56.
+Package microtype Info: Applying patch `footnote' on input line 56.
+Package microtype Info: Applying patch `verbatim' on input line 56.
+LaTeX Info: Redefining \microtypesetup on input line 56.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 50.
+LaTeX Info: Redefining \showhyphens on input line 56.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -528,26 +534,20 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
-\scratchdimen=\dimen190
+\scratchcounter=\count329
+\scratchdimen=\dimen191
 \scratchbox=\box59
-\nofMPsegments=\count329
-\nofMParguments=\count330
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count331
-\MPscratchDim=\dimen191
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen192
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks33
 ) (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -556,19 +556,19 @@ Package caption Info: End \AtBeginDocument code.
  (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
  (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 53.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 59.
  (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -577,65 +577,116 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (14.50002pt too wide) in paragraph at lines 53--53
+Overfull \hbox (14.50002pt too wide) in paragraph at lines 59--59
  [][] 
  []
 
-<Pictures/CRISPR_Cas9.png, id=41, 725.71124pt x 568.37344pt>
+<Pictures/CRISPR_Cas9.png, id=69, 725.71124pt x 568.37344pt>
 File: Pictures/CRISPR_Cas9.png Graphic file (type png)
 <use Pictures/CRISPR_Cas9.png>
-Package pdftex.def Info: Pictures/CRISPR_Cas9.png  used on input line 68.
+Package pdftex.def Info: Pictures/CRISPR_Cas9.png  used on input line 72.
 (pdftex.def)             Requested size: 127.1981pt x 99.61427pt.
-
-Underfull \vbox (badness 3557) has occurred while \output is active []
-
- [1
+[1
 
 
 {C:/Users/anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Pictures/CRISPR_Cas9.png>]
-Overfull \hbox (40.35472pt too wide) detected at line 91
-\OML/cmm/m/it/10 D[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 k \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )] = \U/msb/m/n/10 E[] [] \OT1/cmr/m/n/10 = \U/msb/m/n/10 E[]\OT1/cmr/m/n/10 [[] []] \OMS/cmsy/m/n/10 ^^@ \U/msb/m/n/10 E[]\OT1/cmr/m/n/10 [[] []]
- []
-
-[2]
-Overfull \hbox (40.35472pt too wide) detected at line 102
-\OML/cmm/m/it/10 D[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 k \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )] = \U/msb/m/n/10 E[] [] \OT1/cmr/m/n/10 = \U/msb/m/n/10 E[]\OT1/cmr/m/n/10 [[] []] \OMS/cmsy/m/n/10 ^^@ \U/msb/m/n/10 E[]\OT1/cmr/m/n/10 [[] []]
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 136.
-(C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+<Pictures/Transformer_Architecture.png, id=102, 335.00156pt x 473.51906pt>
+File: Pictures/Transformer_Architecture.png Graphic file (type png)
+<use Pictures/Transformer_Architecture.png>
+Package pdftex.def Info: Pictures/Transformer_Architecture.png  used on input line 95.
+(pdftex.def)             Requested size: 201.29895pt x 284.52756pt.
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 118.
+ (C:\Users\anton\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3]
-<Pictures/CVAE_Architecture.png, id=121, 2040.8747pt x 779.91376pt>
-File: Pictures/CVAE_Architecture.png Graphic file (type png)
-<use Pictures/CVAE_Architecture.png>
-Package pdftex.def Info: Pictures/CVAE_Architecture.png  used on input line 182.
-(pdftex.def)             Requested size: 397.48499pt x 151.89812pt.
- [4 <./Pictures/CVAE_Architecture.png>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./Pictures/Transformer_Architecture.png>] [4]
+<Pictures/CustomLoss.png, id=152, 822.07124pt x 617.30624pt>
+File: Pictures/CustomLoss.png Graphic file (type png)
+<use Pictures/CustomLoss.png>
+Package pdftex.def Info: Pictures/CustomLoss.png  used on input line 198.
+(pdftex.def)             Requested size: 178.86702pt x 134.31012pt.
+<Pictures/InstaLoss.png, id=153, 825.0825pt x 617.30624pt>
+File: Pictures/InstaLoss.png Graphic file (type png)
+<use Pictures/InstaLoss.png>
+Package pdftex.def Info: Pictures/InstaLoss.png  used on input line 202.
+(pdftex.def)             Requested size: 178.86702pt x 133.82031pt.
+
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 222--223
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 226--227
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 230--231
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 234--235
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 238--239
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 242--243
+[][]| 
+ []
+
+
+Overfull \hbox (17.0714pt too wide) in paragraph at lines 246--247
+[][]| 
+ []
+
+
+Overfull \hbox (24.38672pt too wide) in paragraph at lines 216--252
+ []|  [] 
+ []
+
+[6 <./Pictures/CustomLoss.png> <./Pictures/InstaLoss.png>]
+<Pictures/Ranker.png, id=172, 1439.3775pt x 590.205pt>
+File: Pictures/Ranker.png Graphic file (type png)
+<use Pictures/Ranker.png>
+Package pdftex.def Info: Pictures/Ranker.png  used on input line 260.
+(pdftex.def)             Requested size: 397.48499pt x 162.9868pt.
+ [7 <./Pictures/Ranker.png>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 []\T1/ptm/m/n/9 (+20) [14] Syn-thego. ^^PHow to De-sign Your Sin-gle Guide RNA (sgRNA).^^Q \T1/ptm/m/it/9 (+20) Syn-thego\T1/ptm/m/n/9 (+20) ,
  []
 
-[6] (neurips_2020.aux)
+[9] (neurips_2020.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `neurips_2020.out' has not changed.
-(rerunfilecheck)             Checksum: 5112E9E57D8B27B1EB226A7622AD55ED;1123.
+(rerunfilecheck)             Checksum: D1E83B3D33192BC215CD78A68F3F00A4;2003.
  ) 
 Here is how much of TeX's memory you used:
- 16046 strings out of 474486
- 269228 string characters out of 5743756
- 1946542 words of memory out of 5000000
- 37825 multiletter control sequences out of 15000+600000
- 603764 words of font info for 230 fonts, out of 8000000 for 9000
+ 16175 strings out of 474486
+ 271180 string characters out of 5743756
+ 1950542 words of memory out of 5000000
+ 37905 multiletter control sequences out of 15000+600000
+ 609320 words of font info for 255 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,82p,2395b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\anton\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on neurips_2020.pdf (6 pages, 939759 bytes).
+ 75i,14n,82p,2227b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\anton\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\anton\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/anton/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on neurips_2020.pdf (9 pages, 1317460 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 48217 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 54944 words of extra memory for PDF output out of 61914 (max. 10000000)
 
